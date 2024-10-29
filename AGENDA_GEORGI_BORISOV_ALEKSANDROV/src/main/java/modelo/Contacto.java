@@ -1,20 +1,23 @@
 package modelo;
 
 public class Contacto {
-	
+	private int id;
 	private String nombre;
 	private String apellidos;
 	private String email;
 	private int numTelefono;
 	
 	
-	public Contacto(String nombre, String apellidos, String email, int numTelefono) {
+	public Contacto(int id, String nombre, String apellidos, String email, int numTelefono) {
 		super();
+		this.id = id;
 		this.nombre = nombre;
 		this.apellidos = apellidos;
 		this.email = email;
 		this.numTelefono = numTelefono;
 	}
+
+
 	
 	public Contacto() {
 
@@ -50,6 +53,12 @@ public class Contacto {
 
 	public void setNumTelefono(int numTelefono) {
 		this.numTelefono = numTelefono;
+	}
+
+
+
+	public int getId() {
+		return id;
 	}
 	
 	
